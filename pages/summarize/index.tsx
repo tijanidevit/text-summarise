@@ -32,7 +32,7 @@ export default function Home() {
         if (res.status === 200) {
           setLoading(false);
           console.log('res', res)
-          // setsummarizedtext(res?.data?.choices[0]?.text);
+          setsummarizedtext(res.data.choices[0].text);
         }
       })
       .catch((err) => {
